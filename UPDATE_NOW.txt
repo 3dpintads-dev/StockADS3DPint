@@ -1,0 +1,8 @@
+ADS 3D Inventory - FIX ระบบค้าง
+
+1) GitHub: อัปโหลดไฟล์ทั้งหมดในโฟลเดอร์นี้ทับของเดิม
+2) Apps Script: คัดลอก Code.gs นี้ไปแทน Code.gs เดิมทั้งหมด
+3) Apps Script: Deploy > Manage deployments > Edit > New version > Deploy
+4) รอ GitHub Pages 1-2 นาที แล้วเปิดเว็บด้วย Ctrl+F5
+
+เวอร์ชันนี้เปลี่ยนการบันทึกจาก fetch POST เป็น hidden form POST เพื่อเลี่ยง CORS/redirect ของ Apps Script และมี timeout/verify ไม่ให้ปุ่มค้างถาวร
